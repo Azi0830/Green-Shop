@@ -37,12 +37,6 @@ Wrapper.Middle.Item = styled.h3`
   cursor: pointer;
   position: relative;
 
-  /* ${(props) => {
-    return ` 
-    color: ${props.math >= 10 ? "red" : "green"}
-    `;
-  }} */
-
   &::before {
     content: "";
     position: absolute;
@@ -64,6 +58,7 @@ const Middle = styled.div`
   margin: auto;
   margin-top: 12px;
   display: flex;
+  overflow: hidden;
   background: linear-gradient(
     97.77deg,
     rgba(245, 245, 245, 0.5) -23.46%,
